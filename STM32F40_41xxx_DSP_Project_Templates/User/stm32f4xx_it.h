@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    ..\..\User/stm32f4xx_it.h 
+  * @file    stm32f4xx_it.h
   * @author  MCD Application Team
   * @version V1.8.0
   * @date    04-November-2016
