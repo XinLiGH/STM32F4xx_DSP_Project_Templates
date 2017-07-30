@@ -2,7 +2,7 @@
  * Copyright (C) 2016, XinLi, all right reserved.
  * File name:    main.c
  * Date:         2016.09.10
- * Description:  Project Templates.
+ * Description:  Project templates.
 *****************************************************************/
 
 /****************************************************************
