@@ -1,50 +1,51 @@
 /**
   ******************************************************************************
   * @file    stm32f4xx_it.c
-  * @author  MCD Application Team
-  * @version V1.8.0
-  * @date    04-November-2016
+  * @author  XinLi
+  * @version v1.0
+  * @date    24-October-2017
   * @brief   Main Interrupt Service Routines.
-  *          This file provides template for all exceptions handler and 
+  *          This file provides template for all exceptions handler and
   *          peripherals interrupt service routine.
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; COPYRIGHT 2016 STMicroelectronics</center></h2>
+  * <h2><center>Copyright &copy; 2017 XinLi</center></h2>
   *
-  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
-  * You may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at:
+  * This program is free software: you can redistribute it and/or modify
+  * it under the terms of the GNU General Public License as published by
+  * the Free Software Foundation, either version 3 of the License, or
+  * (at your option) any later version.
   *
-  *        http://www.st.com/software_license_agreement_liberty_v2
+  * This program is distributed in the hope that it will be useful,
+  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  * GNU General Public License for more details.
   *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
+  * You should have received a copy of the GNU General Public License
+  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
   *
   ******************************************************************************
   */
 
-/* Includes ------------------------------------------------------------------*/
+/* Header includes -----------------------------------------------------------*/
 #include "stm32f4xx_it.h"
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-/* Private function prototypes -----------------------------------------------*/
-/* Private functions ---------------------------------------------------------*/
+/* Macro definitions ---------------------------------------------------------*/
+/* Type definitions ----------------------------------------------------------*/
+/* Variable declarations -----------------------------------------------------*/
+/* Variable definitions ------------------------------------------------------*/
+/* Function declarations -----------------------------------------------------*/
+/* Function definitions ----------------------------------------------------- */
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Exceptions Handlers                         */
 /******************************************************************************/
 
 /**
-  * @brief   This function handles NMI exception.
-  * @param  None
-  * @retval None
+  * @brief  This function handles NMI exception.
+  * @param  None.
+  * @return None.
   */
 void NMI_Handler(void)
 {
@@ -52,8 +53,8 @@ void NMI_Handler(void)
 
 /**
   * @brief  This function handles Hard Fault exception.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 void HardFault_Handler(void)
 {
@@ -65,8 +66,8 @@ void HardFault_Handler(void)
 
 /**
   * @brief  This function handles Memory Manage exception.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 void MemManage_Handler(void)
 {
@@ -78,8 +79,8 @@ void MemManage_Handler(void)
 
 /**
   * @brief  This function handles Bus Fault exception.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 void BusFault_Handler(void)
 {
@@ -91,8 +92,8 @@ void BusFault_Handler(void)
 
 /**
   * @brief  This function handles Usage Fault exception.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 void UsageFault_Handler(void)
 {
@@ -104,8 +105,8 @@ void UsageFault_Handler(void)
 
 /**
   * @brief  This function handles SVCall exception.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 void SVC_Handler(void)
 {
@@ -113,8 +114,8 @@ void SVC_Handler(void)
 
 /**
   * @brief  This function handles Debug Monitor exception.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 void DebugMon_Handler(void)
 {
@@ -122,8 +123,8 @@ void DebugMon_Handler(void)
 
 /**
   * @brief  This function handles PendSVC exception.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 void PendSV_Handler(void)
 {
@@ -131,8 +132,8 @@ void PendSV_Handler(void)
 
 /**
   * @brief  This function handles SysTick Handler.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 void SysTick_Handler(void)
 {
@@ -147,11 +148,9 @@ void SysTick_Handler(void)
 
 /**
   * @brief  This function handles PPP interrupt request.
-  * @param  None
-  * @retval None
+  * @param  None.
+  * @return None.
   */
 /*void PPP_IRQHandler(void)
 {
-}*/ 
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+}*/

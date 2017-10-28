@@ -1,35 +1,39 @@
 /**
   ******************************************************************************
-  * @file    ..\..\User/stm32f4xx_conf.h  
-  * @author  MCD Application Team
-  * @version V1.8.0
-  * @date    04-November-2016
+  * @file    stm32f4xx_conf.h
+  * @author  XinLi
+  * @version v1.0
+  * @date    24-October-2017
   * @brief   Library configuration file.
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; COPYRIGHT 2016 STMicroelectronics</center></h2>
+  * <h2><center>Copyright &copy; 2017 XinLi</center></h2>
   *
-  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
-  * You may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at:
+  * This program is free software: you can redistribute it and/or modify
+  * it under the terms of the GNU General Public License as published by
+  * the Free Software Foundation, either version 3 of the License, or
+  * (at your option) any later version.
   *
-  *        http://www.st.com/software_license_agreement_liberty_v2
+  * This program is distributed in the hope that it will be useful,
+  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  * GNU General Public License for more details.
   *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
+  * You should have received a copy of the GNU General Public License
+  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
   *
   ******************************************************************************
   */
 
-/* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32F4xx_CONF_H
 #define __STM32F4xx_CONF_H
 
-/* Includes ------------------------------------------------------------------*/
+#ifdef __cplusplus
+ extern "C" {
+#endif
+
+/* Header includes -----------------------------------------------------------*/
 /* Uncomment the line below to enable peripheral header file inclusion */
 #include "stm32f4xx_adc.h"
 #include "stm32f4xx_crc.h"
@@ -134,37 +138,39 @@
 #include "stm32f4xx_dfsdm.h"
 #endif /* STM32F413_423xx */
 
-/* Exported types ------------------------------------------------------------*/
-/* Exported constants --------------------------------------------------------*/
-
+/* Macro definitions ---------------------------------------------------------*/
 /* If an external clock source is used, then the value of the following define 
    should be set to the value of the external clock source, else, if no external 
    clock is used, keep this define commented */
-/*#define I2S_EXTERNAL_CLOCK_VAL   12288000 */ /* Value of the external clock in Hz */
-
+/* #define I2S_EXTERNAL_CLOCK_VAL   12288000 */ /* Value of the external clock in Hz */
 
 /* Uncomment the line below to expanse the "assert_param" macro in the 
    Standard Peripheral Library drivers code */
 /* #define USE_FULL_ASSERT    1 */
 
-/* Exported macro ------------------------------------------------------------*/
-#ifdef  USE_FULL_ASSERT
-
+/* Type definitions ----------------------------------------------------------*/
+/* Variable declarations -----------------------------------------------------*/
+/* Variable definitions ------------------------------------------------------*/
+/* Function declarations -----------------------------------------------------*/
+#ifdef USE_FULL_ASSERT
 /**
   * @brief  The assert_param macro is used for function's parameters check.
   * @param  expr: If expr is false, it calls assert_failed function
-  *   which reports the name of the source file and the source
-  *   line number of the call that failed. 
-  *   If expr is true, it returns no value.
-  * @retval None
+  *               which reports the name of the source file and the source
+  *               line number of the call that failed.
+  *               If expr is true, it returns no value.
+  * @return None.
   */
-  #define assert_param(expr) ((expr) ? (void)0 : assert_failed((uint8_t *)__FILE__, __LINE__))
-/* Exported functions ------------------------------------------------------- */
-  void assert_failed(uint8_t* file, uint32_t line);
+#define assert_param(expr) ((expr) ? (void)0 : assert_failed((uint8_t *)__FILE__, __LINE__))
+void assert_failed(uint8_t* file, uint32_t line);
 #else
-  #define assert_param(expr) ((void)0)
+#define assert_param(expr) ((void)0)
 #endif /* USE_FULL_ASSERT */
 
-#endif /* __STM32F4xx_CONF_H */
+/* Function definitions ----------------------------------------------------- */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __STM32F4xx_CONF_H */
