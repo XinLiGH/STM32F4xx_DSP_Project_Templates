@@ -30,8 +30,8 @@
 #define __STM32F4xx_IT_H
 
 #ifdef __cplusplus
- extern "C" {
-#endif 
+extern "C" {
+#endif
 
 /* Header includes -----------------------------------------------------------*/
 #include "stm32f4xx.h"
@@ -41,7 +41,7 @@
 /* Variable declarations -----------------------------------------------------*/
 /* Variable definitions ------------------------------------------------------*/
 /* Function declarations -----------------------------------------------------*/
-/* Function definitions ----------------------------------------------------- */
+/* Function definitions ------------------------------------------------------*/
 
 #ifdef __cplusplus
 }

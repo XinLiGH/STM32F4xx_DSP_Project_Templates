@@ -30,7 +30,7 @@
 #define __STM32F4xx_CONF_H
 
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 /* Header includes -----------------------------------------------------------*/
@@ -167,7 +167,7 @@ void assert_failed(uint8_t* file, uint32_t line);
 #define assert_param(expr) ((void)0)
 #endif /* USE_FULL_ASSERT */
 
-/* Function definitions ----------------------------------------------------- */
+/* Function definitions ------------------------------------------------------*/
 
 #ifdef __cplusplus
 }
